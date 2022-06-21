@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: spacemono;
+    src: url(/portfolio/teclado/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: joker;
+    src: url(/portfolio/teclado/Gothic-Joker.ttf);
+}
+
+body {
+    background: url(/portfolio/teclado/34922.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: spacemono;
+    font-weight: 600;
+}
+
+
+
+.title {
+    display:flex;
+    text-align: center;
+    position:absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%, -20%);
+    
+}
+.container {
+    border: 9px solid #5f4a8c;
+    border-radius: 5px;
+    background-color: darkgrey;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    min-width: 55%;
+    min-height: 30%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 42px 7px rgb(168, 255, 62);
+    -webkit-box-shadow: 1px 1px 100px 7px rgba(168, 255, 62, 0.288);
+    -moz-box-shadow: 1px 1px 42px 7px rgb(168, 255, 62);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 4.5rem;
+    padding: 0.05rem;
+    margin:0 auto;
+}
+
+.first-line, .second-line, .third-line, .fourth-line, .fiveth-line {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #3c2d73;
+    padding:0.2rem;
+    margin: 0.1rem;
+    background-color: white;
+}
+
+.first-line:hover {
+    opacity:0.8;
+}
+
+.second-line:hover {
+    opacity:0.8;
+}
+
+.third-line:hover {
+    opacity:0.8;
+}
+
+.fourth-line:hover {
+    opacity: 0.8;
+}
+
+.fiveth-line:hover {
+    opacity: 0.8;
+}
+
+.division {
+    display: block;
+    padding: 0.1rem;
+}
+
+.tab, .caps, .backspace, .shift, .ctrl, .opt, .cmd, .menu {
+    background-color: #5f4a8c;
+    color: white;
+}
+
+.ctrl, .opt, .fn, .cmd, .menu {
+    display: flex;
+    align-items: center;
+    padding-top: rem;
+    background-color: #5f4a8c;
+    color: white;
+    width: 15%;
+}
+
+.esc, .enter {
+    background-color: #4ba684;
+    color: white;
+}
+
+.backspace {
+    width: 150%;
+    align-items: flex-end;
+}
+
+.tab {
+    width: 120%;
+}
+
+.caps {
+    width: 140%;
+}
+
+.shift {
+    width: 200%;
+}
+
+#shift-special {
+    align-items: flex-end;
+}
+
+.enter {
+    width:180%;
+    font-family: joker;
+    font-size: 1.4rem;
+    display: flex;
+    align-items:flex-end;
+}
+
+
+.container {
+	-webkit-animation: container 4s cubic-bezier(0.190, 1.000, 0.220, 1.000) 2s infinite both;
+	        animation: container 4s cubic-bezier(0.190, 1.000, 0.220, 1.000) 2s infinite both;
+}
+
+ @-webkit-keyframes container {
+    0% {
+      background: #9f8fd9;
+    }
+    100% {
+      background: #fa5fff;
+    }
+  }
+  @keyframes container {
+    0% {
+      background: #9f8fd9;
+    }
+    100% {
+      background: #fa5fff;
+    }
+  }
+  
